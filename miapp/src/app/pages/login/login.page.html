@@ -1,0 +1,38 @@
+<ion-content [fullscreen]="true">
+<div class="header">
+  <ion-title class="title">Bienvenido!</ion-title>
+  <p class="subTitle">Inicia sesión para ingresar</p>
+</div>
+
+<form>
+  <div class="ion-padding">
+    <ion-item>
+      <ion-input placeholder="Usuario" class="input"></ion-input>
+      <ion-icon name="person-outline"></ion-icon>
+    </ion-item>
+    <ion-item>
+      <ion-input placeholder="Contraseña" class="input"></ion-input>
+      <ion-icon name="lock-closed-outline"></ion-icon>
+    </ion-item>
+    <div class="forgotPassword">
+      <a [routerLink]="['/reset-password']" style="color: #FFC33F">   Olvidaste tu contraseña?</a>
+    </div>
+    <div class="signupLink">
+      <p>No tienes cuenta?   <a style="color: #FFC33F"     [routerLink]="['/signup']">Regístrate</a></p>
+    </div>
+  </div>
+  
+  <ion-button class="boton1"   [routerLink]="['/perfil']"  >INGRESAR</ion-button>
+  
+
+  <ion-avatar id="avatar" #avatar [@moveRight]="true">
+    <ion-img src="assets/auto.png" />
+  </ion-avatar>
+
+
+
+
+
+</form>
+</ion-content>
+ 
